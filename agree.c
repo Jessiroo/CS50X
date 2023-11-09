@@ -13,8 +13,4 @@ int main(void)
     {
         printf("User declined.\n");
     }
-    else
-    {
-
-    }
 }
