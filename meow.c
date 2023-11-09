@@ -6,9 +6,7 @@ int main(void)
 
     while (counter > 0)
     {
-        
+        printf("meow\n");
+        counter--;
     }
-    printf("meow\n");
-    printf("meow\n");
-    printf("meow\n");
 }
