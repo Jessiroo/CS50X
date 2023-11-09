@@ -2,13 +2,17 @@
 
 int main(void)
 {
-    for (int i = 0; i < 3; i++)
-    {
-        printf("meow\n");
-    }
+    // FOR LOOP
+    // for (int i = 0; i < 3; i++)
+    // {
+    //     printf("meow\n");
+    // }
 
+    // WHILE LOOP
     // int i = 0;
 
+    // If you always want the expression to be true
+    // & run forever simply use boolean true
     // while (i < 3)
     // {
     //     printf("meow\n");
