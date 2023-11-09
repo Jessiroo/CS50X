@@ -14,7 +14,7 @@ int main(void)
     // If you always want the expression to be true
     // & run forever simply use boolean true --> while (true)
     // Any other non-zero value would have same effect
-    // stdio
+    // stdbool.h required to use boolean, or for course cs50.h
 
     // while (i < 3)
     // {
