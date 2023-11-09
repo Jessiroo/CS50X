@@ -2,7 +2,10 @@
 
 int main(void)
 {
-    for (int i)
+    for (int i = 0; i < 3; i++)
+    {
+        printf("meow\n");
+    }
 
     // int i = 0;
 
