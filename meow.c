@@ -2,8 +2,12 @@
 
 int main(void)
 {
-    int counter = 0;
-    
+    int counter = 3;
+
+    while (counter > 0)
+    {
+        
+    }
     printf("meow\n");
     printf("meow\n");
     printf("meow\n");
