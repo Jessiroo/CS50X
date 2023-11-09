@@ -3,6 +3,19 @@
 
 int main(void)
 {
-    int xVariable = get_int("What's x? ");
+    int x = get_int("What's x? ");
+    int y = get_int("What's y? ");
 
+    if (x < y)
+    {
+        printf("%d is less than %d\n", x, y);
+    }
+    else if (x > y)
+    {
+        printf("%d is greater than %d\n", x, y);
+    }
+    else
+    {
+        printf("%d equal to %d\n", x, y);
+    }
 }
