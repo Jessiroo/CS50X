@@ -23,13 +23,13 @@ int main(void) {
     {
         initialPop = get_int("Starting population: ");
     }
-    while (initialPop < 1);
+    while (initialPop < 9);
     int targetPop;
     do
     {
         targetPop = get_int("Target population: ");
     }
-    while (targetPop < initialPop);
+    while (targetPop <= initialPop);
 
     // create variables for current population and years
     int currentPop = initialPop;
