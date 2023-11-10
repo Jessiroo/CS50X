@@ -3,7 +3,7 @@
 
 // initial population variable intake
 // desired population variable intake
-// years output input
+// years output
 
 // current population variable
 
@@ -11,4 +11,4 @@
     // add births
     // subtract deaths
     // update current population
-    
+
