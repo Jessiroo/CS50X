@@ -7,5 +7,8 @@
 
 // current population variable
 
-// create loop while below target 
-    // check cu
+// create loop while below target population
+    // add births
+    // subtract deaths
+    // update current population
+    
