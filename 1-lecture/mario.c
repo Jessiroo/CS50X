@@ -11,6 +11,15 @@ int main(void)
 }
 
 int get_size(void)
+{
+    int n;
+    do
+    {
+        n = get_int("Size: ");
+    }
+    while (n < 1);
+    return n;
+}
 
 // One codeset
 // int main(void)
