@@ -21,13 +21,13 @@ int main(void) {
     int initialPop;
     do
     {
-        get_int("Starting population: ");
+        initialPop = get_int("Starting population: ");
     }
     while (initialPop < 1);
     int targetPop;
     do
     {
-        get_int("Target population: ");
+        targetPop = get_int("Target population: ");
     }
     while (targetPop < initialPop);
 
