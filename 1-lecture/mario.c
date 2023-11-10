@@ -10,7 +10,7 @@ int main(void)
     print_grid(n);
 }
 
-
+int get_size(void)
 
 // One codeset
 // int main(void)
