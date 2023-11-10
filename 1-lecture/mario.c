@@ -21,6 +21,18 @@ int get_size(void)
     return n;
 }
 
+void print_grid(int size)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
+
 // One codeset
 // int main(void)
 // {
