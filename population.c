@@ -6,9 +6,14 @@
 // years output
 
 // current population variable
+// years variable
 
 // create loop while below target population
     // add births
     // subtract deaths
     // update current population
+    // increment years
 
+// print years
+
+int 
