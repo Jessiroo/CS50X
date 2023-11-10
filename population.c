@@ -18,5 +18,7 @@
 
 int main(void) {
     int initialPop = get_int("Starting population: ");
-    int 
+    int targetPop = get_int("Target population: ");
+
+    
 }
