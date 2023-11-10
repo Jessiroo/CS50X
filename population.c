@@ -16,4 +16,7 @@
 
 // print years
 
-int 
+int main(void) {
+    int initialPop = get_int("Starting population: ");
+    int 
+}
