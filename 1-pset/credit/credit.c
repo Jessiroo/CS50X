@@ -2,19 +2,28 @@
 #include <cs50.h>
 
 int get_card(void);
+void check_card(int num);
 
+// main function
 int main(void)
 {
+    const cardNumber = get_card();
 
 }
 
-
+// get_card function
 int get_card(void)
 {
-    int cardNumber;
+    int number;
     do
     {
-        cardNumber = get_long("Number: ");
+        number = get_long("Number: ");
     }
-    while (cardNumber.length < 13);
+    while (number.length < 13);
+}
+
+// check_card function
+void check_card(int num)
+{
+    
 }
