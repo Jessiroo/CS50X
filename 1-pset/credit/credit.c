@@ -16,5 +16,5 @@ int get_card(void)
     {
 
     }
-    while (cardNumber.length < 13 && cardNumber.length);
+    while (cardNumber.length < 13);
 }
