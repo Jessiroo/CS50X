@@ -3,5 +3,5 @@
 
 int main(void)
 {
-    const cardNumber = get_long()
+    const cardNumber = get_long();
 }
