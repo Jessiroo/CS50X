@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main(void) {
+int main(void)
+{
     //establish initial and target populations
     int initialPop;
     do
@@ -14,7 +15,7 @@ int main(void) {
     {
         targetPop = get_int("Target population: ");
     }
-    while (targetPop <= initialPop);
+    while (targetPop < initialPop);
 
     // create variables for current population and years
     int currentPop = initialPop;
