@@ -26,4 +26,5 @@ int get_card(void)
 void check_card(int num)
 {
     
+    return printf("INVALID\n");
 }
