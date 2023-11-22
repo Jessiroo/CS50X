@@ -14,7 +14,7 @@ int get_card(void)
     int cardNumber;
     do
     {
-
+        cardNumber = get_long("Number: ");
     }
     while (cardNumber.length < 13);
 }
