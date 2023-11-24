@@ -50,7 +50,7 @@ int main(void)
     int first_digits = (digit1 * 10) + digit2;
 
     // create if statements to determine final output need first digits
-    if ()
+    if (cc)
     {
         printf("AMEX\n");
     }
