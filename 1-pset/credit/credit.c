@@ -42,7 +42,7 @@ int main(void)
 
         cc_number /= 10;
         number_of_digits++;
-        printf("%i\n", cc_number);
+        printf("%li\n", cc_number);
     }
 
     // out of loop:
