@@ -30,7 +30,19 @@ int main(void)
         digit2 = digit1;
         digit1 = cc_number % 10;
 
-        if ()
+        if (number_of_digits % 2 == 0)
+        {
+            sum_evens += digit1;
+        }
+        else
+        {
+            int digit_multiple = digit1 * 2;
+            sum_odds += (digit_multiple / 10) + (digit_multiple % 10);
+        }
+
+        cc_number /= 10;
+        number_of_digits++;
+        printf("%i\n", cc_number);
     }
 
     // out of loop:
