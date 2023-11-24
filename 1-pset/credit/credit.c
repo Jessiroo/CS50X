@@ -23,5 +23,18 @@ int main(void)
     // if number of digits odd (else)
         // create new variable multiplying d1 by 2
         // add the digit(s) of new multiple together and add to odds sum
-    // 
+    // update card number by removing last digit (/= 10)
+    // increment number of digits
+    while (cc_number > 0)
+    {
+        digit2 = digit1;
+        digit1 = cc_number % 10;
+
+        if ()
+    }
+
+    // out of loop:
+    // boolean of viable number or not
+
+    // create if statements to determine final output
 }
