@@ -13,7 +13,7 @@ int main(void)
     int digit1 = 0;
     int digit2 = 0;
     int number_of_digits = 0;
-    int sum_odds = 0;
+    int sum_odds_mult = 0;
     int sum_evens = 0;
 
     // create while loop, as long as cc number is greater than 0 (still exists)
@@ -37,7 +37,7 @@ int main(void)
         else
         {
             int digit_multiple = digit1 * 2;
-            sum_odds += (digit_multiple / 10) + (digit_multiple % 10);
+            sum_odds_mult += (digit_multiple / 10) + (digit_multiple % 10);
         }
 
         cc_number /= 10;
@@ -47,6 +47,9 @@ int main(void)
 
     // out of loop:
     // boolean of viable number or not
+    bool is_valid = (sum_evens + sum_odds_mult) % 10 == 0;
+    int first_digits = (digit1 * 10) + digit2;
 
-    // create if statements to determine final output
+    // create if statements to determine final output need first digits
+    
 }
