@@ -49,16 +49,16 @@ int main(void)
     bool is_valid = (sum_evens + sum_odds_mult) % 10 == 0;
     int first_digits = (digit1 * 10) + digit2;
 
-    // create if statements to determine final output need first digits
-    if (cc)
+    // print output based on parameters
+    if (is_valid && number_of_digits == 15 && (first_digits == 34 || first_digits == 37))
     {
         printf("AMEX\n");
     }
-    else if ()
+    else if (is_valid && number_of_digits == 16 && first_digits >= 51 && first_digits <= 55)
     {
         printf("MASTERCARD\n");
     }
-    else if ()
+    else if (is_valid && (number_of_digits >= 13 || number_of_digits <= 16) && digit1 == 4)
     {
         printf("VISA\n");
     }
