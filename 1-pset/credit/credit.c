@@ -52,10 +52,18 @@ int main(void)
     // create if statements to determine final output need first digits
     if ()
     {
-
+        printf("AMEX\n");
+    }
+    else if ()
+    {
+        printf("MASTERCARD\n");
+    }
+    else if ()
+    {
+        printf("VISA\n");
     }
     else
     {
-        printf(")
+        printf("INVALID\n");
     }
 }
