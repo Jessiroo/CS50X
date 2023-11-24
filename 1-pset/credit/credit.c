@@ -42,7 +42,6 @@ int main(void)
 
         cc_number /= 10;
         number_of_digits++;
-        printf("%li\n", cc_number);
     }
 
     // out of loop:
@@ -51,5 +50,12 @@ int main(void)
     int first_digits = (digit1 * 10) + digit2;
 
     // create if statements to determine final output need first digits
-    
+    if ()
+    {
+
+    }
+    else
+    {
+        printf(")
+    }
 }
