@@ -58,7 +58,7 @@ int main(void)
     {
         printf("MASTERCARD\n");
     }
-    else if (is_valid && (number_of_digits >= 13 || number_of_digits <= 16) && digit1 == 4)
+    else if (is_valid && (number_of_digits >= 13 && number_of_digits <= 16) && digit1 == 4)
     {
         printf("VISA\n");
     }
