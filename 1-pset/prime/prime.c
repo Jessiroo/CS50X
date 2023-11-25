@@ -16,9 +16,9 @@ int main(void)
     do
     {
         max = get_int("Maximum: ");
-    } 
+    }
     while (min >= max);
-    
+
     for (int i = min; i <= max; i++)
     {
         if (prime(i))
@@ -30,6 +30,12 @@ int main(void)
 
 bool prime(int number)
 {
-    // TODO
+    if (number == 1 || (number !== 2 && number % 2 == 0))
+    {
+        return false;
+    }
+
+    for (int i = )
+
     return false;
 }
