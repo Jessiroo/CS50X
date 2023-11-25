@@ -31,7 +31,7 @@ int main(void)
 bool prime(int number)
 {
     // special cases defining output
-    if (number == 2)
+    if (number == 2 || number == 3)
     {
         return true;
     }
@@ -41,7 +41,13 @@ bool prime(int number)
     }
 
     // loop
-    for (int i = 3; )
+    for (int i = 3; i < number; i++)
+    {
+        if (number % i == 0 )
+        {
+            return false;
+        }
+    }
 
-    return false;
+    return true;
 }
