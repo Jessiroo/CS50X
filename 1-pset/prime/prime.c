@@ -30,11 +30,17 @@ int main(void)
 
 bool prime(int number)
 {
+    // special cases defining output
     if (number == 1 || (number !== 2 && number % 2 == 0))
     {
         return false;
     }
+    else if (number == 2)
+    {
+        return true;
+    }
 
+    // loop
     for (int i = )
 
     return false;
