@@ -31,17 +31,17 @@ int main(void)
 bool prime(int number)
 {
     // special cases defining output
-    if (number == 1 || (number !== 2 && number % 2 == 0))
-    {
-        return false;
-    }
-    else if (number == 2)
+    if (number == 2)
     {
         return true;
     }
+    else if (number == 1 || number % 2 == 0)
+    {
+        return false;
+    }
 
     // loop
-    for (int i = )
+    for (int i = 3; )
 
     return false;
 }
