@@ -16,7 +16,7 @@ int main(void)
 
         response = get_char(" ");
     }
-    while (response != "y" || response != "Y")
+    while (response != "y" || response != Y)
 
     printf("Information confirmed.");
 }
