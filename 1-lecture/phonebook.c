@@ -15,7 +15,7 @@ int main(void)
         printf("Your name is %s, address is %s, and phone is %i\n", name, address, phone_number);
         printf("Is this correct? y/n");
 
-        char response = get_char(" ");
+        string response = get_string(" ");
 
         int result1 = strcmp(response, "y");
         int result2 = strcmp(response, "Y");
@@ -25,7 +25,7 @@ int main(void)
             correct_info = true;
         }
     }
-    while (correct_info == false)
+    while (correct_info == false);
 
     printf("Information confirmed.");
 }
