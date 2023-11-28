@@ -17,10 +17,9 @@ int main(void)
 
         char response = get_char(" ");
 
-        if (response == "y")
-        {
-            correct_info = true;
-        }
+        int result = strcmp()
+
+
     }
     while ()
 
