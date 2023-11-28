@@ -27,5 +27,5 @@ int main(void)
     }
     while (correct_info == false);
 
-    printf("Information confirmed.");
+    printf("Information confirmed.\n");
 }
