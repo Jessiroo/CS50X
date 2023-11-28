@@ -11,7 +11,7 @@
 //     {
 //         string name = get_string("Name: ");
 //         string address = get_string("Address: ");
-//         int phone_number = get_int("Phone: ");
+//         string phone_number = get_string("Phone: ");
 
 //         printf("Your name is %s, address is %s, and phone is %i\n", name, address, phone_number);
 //         printf("Is this correct? y/n");
@@ -36,5 +36,7 @@ int main(void)
 {
     string name = get_string("What's your name? ");
     int age = get_int("What's your age? ");
-    
+    string phone = get_string("What's your phone number? ");
+
+    printf("Name is %s. Age is %i. Phone is %s.\n", name, age, phone);
 }
