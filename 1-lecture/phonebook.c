@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    char response;
+    bool correct_info;
 
     do
     {
@@ -14,9 +14,14 @@ int main(void)
         printf("Your name is %s, address is %s, and phone is %i\n", name, address, phone_number);
         printf("Is this correct? y/n");
 
-        response = get_char(" ");
+        char response = get_char(" ");
+
+        if (response == "y")
+        {
+            correct_info = true;
+        }
     }
-    while (response != "y" || response != Y)
+    while ()
 
     printf("Information confirmed.");
 }
