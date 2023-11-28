@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    bool correct_info;
+    bool correct_info = false;
 
     do
     {
@@ -17,11 +17,15 @@ int main(void)
 
         char response = get_char(" ");
 
-        int result = strcmp()
+        int result1 = strcmp(response, "y");
+        int result2 = strcmp(response, "Y");
 
-
+        if (result1 == 0 || result2 == 0)
+        {
+            correct_info = true;
+        }
     }
-    while ()
+    while (correct_info == false)
 
     printf("Information confirmed.");
 }
