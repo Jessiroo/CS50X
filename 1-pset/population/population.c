@@ -57,7 +57,8 @@ int main(void)
 
     while (start < end)
     {
-
+        start += start / 12;
+        years++;
     }
     printf("Years: %i\n", years);
 }
