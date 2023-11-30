@@ -52,5 +52,6 @@ int main(void)
     }
     while (end < start);
 
-    
+    // how many years will it take to reach goal
+    int years = 0;
 }
