@@ -44,9 +44,13 @@ int main(void)
     }
     while (start < 9);
 
+    // prompt for ending population size
     int end;
     do
     {
-        end
+        end = get_int("Target population size: ");
     }
+    while (end < start);
+
+    
 }
