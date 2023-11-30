@@ -10,6 +10,7 @@ int main(void)
         initialPop = get_int("Starting population: ");
     }
     while (initialPop < 9);
+    
     int targetPop;
     do
     {
