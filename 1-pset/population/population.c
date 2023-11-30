@@ -36,5 +36,17 @@
 // SECTION LECTURE
 int main(void)
 {
-    
+    // prompt for starting population size
+    int start;
+    do
+    {
+        start = get_int("Starting population size: ");
+    }
+    while (start < 9);
+
+    int end;
+    do
+    {
+        end
+    }
 }
