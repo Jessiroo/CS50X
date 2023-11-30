@@ -54,4 +54,10 @@ int main(void)
 
     // how many years will it take to reach goal
     int years = 0;
+
+    while (start < end)
+    {
+
+    }
+    printf("Years: %i\n", years);
 }
