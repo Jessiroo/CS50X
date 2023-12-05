@@ -13,7 +13,6 @@ int main(void)
 int get_negative_int(void)
 {
     int n;
-
     do
     {
         n = get_int("Negative Integer: ");
