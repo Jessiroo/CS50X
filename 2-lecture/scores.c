@@ -1,17 +1,19 @@
 #include <stdio.h>
 #include <cs50.h>
 
+// OPTIMIZED VERSION:
+const int N = 3;
+
 // declaring a function and declaring that function
 // will accept an array of integers as an argument
 // (array name here can be whatever we desire)
 float average(int arrayname[]);
 
-// Optimized version
 int main(void)
 {
-    int scores[3];
+    int scores[N];
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < N; i++)
     {
         scores[i] = get_int("Score: ");
     }
@@ -21,7 +23,7 @@ int main(void)
 
 float average (int arrayname[])
 {
-    
+
 }
 
 
