@@ -7,7 +7,7 @@ const int N = 3;
 // declaring a function and declaring that function
 // will accept an array of integers as an argument
 // (array name here can be whatever we desire)
-float average(int arrayname[]);
+float average(int array[]);
 
 int main(void)
 {
@@ -21,9 +21,14 @@ int main(void)
     printf("Average: %f\n", average(scores);
 }
 
-float average (int arrayname[])
+float average (int array[])
 {
-
+    int total_score;
+    for (int i = 0; i < N; i++)
+    {
+        total_score += array[i];
+    }
+    return total_score / (float) N;
 }
 
 
