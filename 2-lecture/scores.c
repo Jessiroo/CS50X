@@ -5,10 +5,10 @@
 // preventing a "magic number" which must be changed in multiple places
 const int N = 3;
 
-// declaring a function and stating function
-// will accept an array of integers as an argument
+// declaring a function and stating functionwill accept
+// a length variable and an array of integers as an argument
 // (array name here can be whatever we desire)
-float average(int array[]);
+float average(int length, int array[]);
 
 int main(void)
 {
@@ -19,17 +19,17 @@ int main(void)
         scores[i] = get_int("Score: ");
     }
 
-    printf("Average: %f\n", average(scores));
+    printf("Average: %f\n", average(N, scores));
 }
 
-float average (int array[])
+float average (int length, int array[])
 {
     int sum = 0;
-    for (int i = 0; i < N; i++)
+    for (int i = 0; i < length; i++)
     {
         sum += array[i];
     }
-    return sum / (float) N;
+    return sum / (float) length;
 }
 
 
