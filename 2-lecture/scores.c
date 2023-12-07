@@ -4,7 +4,7 @@
 // declaring a function and declaring that function
 // will accept an array of integers as an argument
 // (array name here can be whatever we desire)
-float average(int array[]);
+float average(int arrayname[]);
 
 // Optimized version
 int main(void)
@@ -16,7 +16,12 @@ int main(void)
         scores[i] = get_int("Score: ");
     }
 
-    printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / (float) 3);
+    printf("Average: %f\n", average(scores);
+}
+
+float average (int arrayname[])
+{
+    
 }
 
 
