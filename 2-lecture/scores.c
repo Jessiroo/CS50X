@@ -5,7 +5,7 @@
 // preventing a "magic number" which must be changed in multiple places
 const int N = 3;
 
-// declaring a function and declaring that function
+// declaring a function and stating function
 // will accept an array of integers as an argument
 // (array name here can be whatever we desire)
 float average(int array[]);
