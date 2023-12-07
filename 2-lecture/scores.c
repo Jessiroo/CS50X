@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <cs50.h>
 
+// declaring a function and declaring that function
+// will accept an array of integers as an argument
+// (array name here can be whatever we desire)
+float average(int array[]);
+
 // Optimized version
 int main(void)
 {
