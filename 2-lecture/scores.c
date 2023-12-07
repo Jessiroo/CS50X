@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <cs50.h>
 
-// OPTIMIZED VERSION:
+// OPTIMIZED VERSION: pt3
+// preventing a "magic number" which must be changed in multiple places
 const int N = 3;
 
 // declaring a function and declaring that function
@@ -23,17 +24,17 @@ int main(void)
 
 float average (int array[])
 {
-    int total_score = 0;
+    int sum = 0;
     for (int i = 0; i < N; i++)
     {
-        total_score += array[i];
+        sum += array[i];
     }
-    return total_score / (float) N;
+    return sum / (float) N;
 }
 
 
 
-// Declaring and Using Arrays
+// DECLARING USING AN ARRAY: pt2
 // int main(void)
 // {
 //     int scores[3];
@@ -49,7 +50,7 @@ float average (int array[])
 
 
 
-// Declaring individual variables
+// DECLARING USING INDIVIDUAL VARIABLES: pt1
 // int main(void)
 // {
 //     int score1 = 72;
