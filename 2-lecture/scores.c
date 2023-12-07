@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <cs50.h>
 
-// Declaring and Using Arrays
 int main(void)
 {
     int scores[3];
@@ -11,9 +10,24 @@ int main(void)
 
     printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / (float) 3);
 }
+
+
+
+// Declaring and Using Arrays
+// int main(void)
+// {
+//     int scores[3];
+//     scores[0] = get_int("Score: ");
+//     scores[1] = get_int("Score: ");
+//     scores[2] = get_int("Score: ");
+
+//     printf("Average: %f\n", (scores[0] + scores[1] + scores[2]) / (float) 3);
+// }
 // with this approach memory is set aside ahead of time for an array
 // of three scores which are integers
 // memory is only used to keep track of one variable name
+
+
 
 // Declaring individual variables
 // int main(void)
