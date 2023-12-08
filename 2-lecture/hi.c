@@ -12,6 +12,7 @@ int main(void)
     words[1] = "BYE!";
 
     printf("%s\n", words[0]);
+    printf("%c %c %c\n", words[0][0], words[0][1], words[0][2]);
     printf("%s\n", words[1]);
 }
 
