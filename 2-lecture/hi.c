@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <cs50.h>
 
+// DEFINING AS A STRING (at this point with the cs50 library)
 int main(void)
 {
     string s = "HI!";
 
     printf("%s\n", s);
+    printf("%c\n" s[2]);
 }
 
 
