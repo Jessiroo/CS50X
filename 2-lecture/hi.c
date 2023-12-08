@@ -7,7 +7,7 @@ int main(void)
     string s = "HI!";
 
     printf("%s\n", s);
-    printf("%c\n" s[2]);
+    printf("%c\n", s[2]);
 }
 
 
