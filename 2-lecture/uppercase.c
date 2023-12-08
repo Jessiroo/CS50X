@@ -11,7 +11,7 @@ int main(void)
     {
         if (s[i] >= 'a' && s[i] <= 'z')
         {
-            printf("%c", s[i]);
+            printf("%c", s[i] - 32);
         }
     }
 }
