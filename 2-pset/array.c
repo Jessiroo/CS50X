@@ -10,6 +10,6 @@ int main(void)
     for (int i = 0, value = 1; i < length; i++)
     {
         array[i] = value;
-        value = value x 2;
+        value = 2 x value;
     }
 }
