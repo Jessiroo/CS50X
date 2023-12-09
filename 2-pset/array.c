@@ -13,15 +13,12 @@ int main(void)
 
     int array[length];
 
+    printf("[");
     for (int i = 0, value = 1; i < length; i++)
     {
         array[i] = value;
         value = value * 2;
-    }
 
-    printf("[");
-    for (int i = 0; i < length; i++)
-    {
         if (i == length - 1)
         {
             printf(" %i", array[i]);
