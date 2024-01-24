@@ -13,9 +13,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    string input = argv[1];
-
-    string answer = replace(input);
+    string answer = replace(argv[1]);
 
     printf("%s/n", answer);
 }
