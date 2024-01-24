@@ -22,7 +22,6 @@ int main(int argc, string argv[])
 string replace(char input[])
 {
     int length = strlen(input);
-    printf("%i\n", length);
     char new_string[length];
 
     for(int i = 0; i < length; i++)
