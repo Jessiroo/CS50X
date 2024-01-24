@@ -57,7 +57,7 @@ float calc_hours(int hours[], int weeks, char output_type)
     }
     else
     {
-        float average = sum / weeks;
+        float average = float sum / weeks;
         return average;
     }
 }
