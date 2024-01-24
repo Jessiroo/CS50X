@@ -13,9 +13,13 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    printf("%s\n", argv[1]);
+    // printf("%s\n", argv[1]);
 
-    string answer[] = replace(argv[1]);
+    int length = strlen(argv[1]);
+
+    char input_string[length];
+
+    answer = replace(argv[1]);
 
     // string answer = replace(input);
 
