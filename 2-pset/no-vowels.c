@@ -13,7 +13,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    
+
 
 
     // printf("%s\n", argv[1]);
@@ -22,7 +22,7 @@ int main(int argc, string argv[])
 
     // char input_string[length];
 
-    // string answer[length] = replace(argv[1]);
+    // string answer = replace(char argv[1]);
 
     // string answer = replace(input);
 
