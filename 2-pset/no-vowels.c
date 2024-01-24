@@ -26,19 +26,19 @@ string replace(char input[])
     {
         if (input[i] == 'a' || input[i] == 'A')
         {
-            new_string[i] = 6;
+            new_string[i] = '6';
         }
         else if (input[i] == 'e' || input[i] == 'E')
         {
-            new_string[i] = 3;
+            new_string[i] = '3';
         }
         else if (input[i] == 'i' || input[i] == 'I')
         {
-            new_string[i] = 1;
+            new_string[i] = '1';
         }
         else if (input[i] == 'o' || input[i] == 'O')
         {
-            new_string[i] = 0;
+            new_string[i] = '0';
         }
         else
         {
