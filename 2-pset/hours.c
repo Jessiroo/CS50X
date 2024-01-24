@@ -2,30 +2,67 @@
 #include <ctype.h>
 #include <stdio.h>
 
-float calc_hours(int hours[], int weeks, char output);
+// declare functions
+float calc_hours(int hours[], int weeks, char output_type);
 
+// main program
 int main(void)
 {
-    int weeks = get_int("Number of weeks taking CS50: ");
-    int hours[weeks];
-
-    for (int i = 0; i < weeks; i++)
-    {
-        hours[i] = get_int("Week %i HW Hours: ", i);
-    }
-
-    char output;
+    // establish weeks taking course
+    int weeks = 0;
     do
     {
-        output = toupper(get_char("Enter T for total hours, A for average hours per week: "));
+        weeks = get_int("How many weeks have you been taking the course? ");
     }
-    while (output != 'T' && output != 'A');
+    while (weeks < 1);
 
-    printf("%.1f hours\n", calc_hours(hours, weeks, output));
+    // create array of study hours per week
+    int hours[weeks];
+    for (int i = 0; i < weeks, i++)
+    {
+        do
+        {
+            hours[i] = get_int("Week %i Hours Studying: ", i);
+        }
+        while (hours[i] < 0);
+    }
+
+    // determine whether to calculate average or total
+    char output_type;
+    do
+    {
+        output_type = toupper(get_char("Enter T for total hours, A for average hours per week: "));
+    }
+    while (output_type != 'T' && output_type != 'A');
+
+    // request number of weeks taking CS50
+        // do while number is 0 or less
+    // create array of length weeks
+
+    // iterate over weeks requesting hours per week until all weeks done
+
+    // ask user for A or T to calculate total or average
+    // print answer
 }
 
-// TODO: complete the calc_hours function
-float calc_hours(int hours[], int weeks, char output)
+// calculation function
+float calc_hours(int hours[], int weeks, char output_type)
 {
+    // calculate sum of hours
+    int sum = 0;
+    for (int i = 0; i < weeks; i++)
+    {
+        sum += hours[i];
+    }
 
+    // alter based on output type
+    if (output_type == 'T')
+    {
+        return sum;
+    }
+    else
+    {
+        float average = sum / weeks;
+        return average;
+    }
 }
