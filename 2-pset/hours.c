@@ -18,7 +18,7 @@ int main(void)
 
     // create array of study hours per week
     int hours[weeks];
-    for (int i = 0; i < weeks, i++)
+    for (int i = 0; i < weeks; i++)
     {
         do
         {
@@ -35,16 +35,9 @@ int main(void)
     }
     while (output_type != 'T' && output_type != 'A');
 
-    float answer = calc_hours()
+    float answer = calc_hours(hours, weeks, output_type);
 
-    // request number of weeks taking CS50
-        // do while number is 0 or less
-    // create array of length weeks
-
-    // iterate over weeks requesting hours per week until all weeks done
-
-    // ask user for A or T to calculate total or average
-    // print answer
+    printf("%f hours", answer);
 }
 
 // calculation function
