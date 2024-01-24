@@ -14,7 +14,7 @@ int main(int argc, string argv[])
     }
     string input = argv[1];
 
-    string answer = replace(argv[1]);
+    string answer = replace(input);
 
     printf("%s\n", answer);
 }
