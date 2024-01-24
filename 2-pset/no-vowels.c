@@ -48,6 +48,7 @@ string replace(char input[])
         {
             new_string[i] = input[i];
         }
-        return new_string;
     }
+
+    return new_string;
 }
