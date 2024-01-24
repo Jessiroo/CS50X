@@ -48,6 +48,5 @@ string replace(char input[])
         }
     }
 
-    printf("%s\n", new_string);
-    return "OK";
+    string 
 }
