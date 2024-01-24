@@ -48,6 +48,6 @@ string replace(char input[])
         }
     }
 
-    string leet_string = strcopy(new_string);
+    string leet_string = new_string;
     return leet_string;
 }
