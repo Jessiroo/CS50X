@@ -46,5 +46,6 @@ string replace(char input[])
         }
     }
 
-    return new_string;
+    string leet_string = new_string;
+    return leet_string;
 }
