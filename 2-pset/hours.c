@@ -37,7 +37,7 @@ int main(void)
 
     float answer = calc_hours(hours, weeks, output_type);
 
-    printf("%f hours", answer);
+    printf("%f hours\n", answer);
 }
 
 // calculation function
