@@ -9,7 +9,7 @@ int main(int argc, string argv[])
 {
     if (argc > 2 || argc < 2)
     {
-        printf("Error, improper command line arguments, please try again.../n");
+        printf("Error, improper command line arguments, please try again...\n");
         return 1;
     }
 
