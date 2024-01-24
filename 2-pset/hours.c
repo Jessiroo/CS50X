@@ -14,11 +14,18 @@ int main(void)
 
     for (int i = 0; i < weeks, i++)
     {
+        int hours = 0;
         do
         {
-            
+            printf("Week %i ", i);
+            hours = get_int("Hours: ");
         }
+        while (hours < 0);
+
+        array[i] = hours;
     }
+
+    char = get_char("Enter );
 
     // request number of weeks taking CS50
         // do while number is 0 or less
