@@ -22,6 +22,25 @@ string replace(string input[])
 
     for(int i = 0; i < length; i++)
     {
-        if ()
+        if (input[i] == 'a' || input[i] == 'A')
+        {
+            new_string[i] = 6;
+        }
+        else if (input[i] == 'e' || input[i] == 'E')
+        {
+            new_string[i] = 3;
+        }
+        else if (input[i] == 'i' || input[i] == 'I')
+        {
+            new_string[i] = 1;
+        }
+        else if (input[i] == 'o' || input[i] == 'O')
+        {
+            new_string[i] = 0;
+        }
+        else
+        {
+            new_string[i] = input[i];
+        }
     }
 }
