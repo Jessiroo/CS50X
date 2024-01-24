@@ -17,7 +17,6 @@ int main(void)
         int hours = 0;
         do
         {
-            printf("Week %i ", i);
             hours = get_int("Hours: ");
         }
         while (hours < 0);
