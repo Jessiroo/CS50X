@@ -13,7 +13,9 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    printf("%s\n", replace(argv[1]));
+    string answer = replace(argv[1]);
+
+    printf("%s\n", answer);
 }
 
 // vowel replacer function
