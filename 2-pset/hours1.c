@@ -1,10 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 
-float calc_hours(int hours[], )
+// declare functions
+float calc_hours(int hours[], int weeks, char output_type);
 
+// main program
 int main(void)
 {
+    // establish weeks taking course
     int weeks = 0;
     do
     {
@@ -12,32 +15,24 @@ int main(void)
     }
     while (weeks < 1);
 
-    int array[weeks];
-
+    // create array of study hours per week
+    int hours[weeks];
     for (int i = 0; i < weeks, i++)
     {
-        int hours = 0;
         do
         {
-            hours = get_int("Week %i Hours: ", i);
+            hours[i] = get_int("Week %i Hours Studying: ", i);
         }
-        while (hours < 0);
-
-        array[i] = hours;
+        while (hours[i] < 0);
     }
 
+    // determine whether to calculate average or total
     char output_type;
-
     do
     {
         output_type = toupper(get_char("Enter T for total hours, A for average hours per week: "));
     }
     while (output_type != 'T' && output_type != 'A');
-
-
-
-
-
 
     // request number of weeks taking CS50
         // do while number is 0 or less
@@ -47,4 +42,13 @@ int main(void)
 
     // ask user for A or T to calculate total or average
     // print answer
+}
+
+// calculation function
+float calc_hours(int hours[], int weeks, char output_type)
+{
+    if (output_type == 'T')
+    {
+        for ()
+    }
 }
