@@ -19,7 +19,7 @@ int main(int argc, string argv[])
 }
 
 // vowel replacer function
-string replace(string input)
+string replace(string argv[])
 {
     int length = strlen(input);
     string new_string[length];
