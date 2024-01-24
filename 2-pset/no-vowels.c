@@ -12,6 +12,7 @@ int main(int argc, string argv[])
         printf("Error, improper command line arguments, please try again...\n");
         return 1;
     }
+    string input = 
 
     string answer = replace(argv[1]);
 
