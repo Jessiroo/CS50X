@@ -13,13 +13,16 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    
+
+
     // printf("%s\n", argv[1]);
 
-    int length = strlen(argv[1]);
+    // int length = strlen(argv[1]);
 
-    char input_string[length];
+    // char input_string[length];
 
-    string answer[length] = replace(argv[1]);
+    // string answer[length] = replace(argv[1]);
 
     // string answer = replace(input);
 
@@ -29,32 +32,34 @@ int main(int argc, string argv[])
 // vowel replacer function
 string replace(char input[])
 {
-    int length = strlen(input);
-    string new_string[length];
+    // int length = strlen(input);
+    // string new_string[length];
 
-    for(int i = 0; i < length; i++)
-    {
-        if (input[i] == 'a' || input[i] == 'A')
-        {
-            new_string[i] = 6;
-        }
-        else if (input[i] == 'e' || input[i] == 'E')
-        {
-            new_string[i] = 3;
-        }
-        else if (input[i] == 'i' || input[i] == 'I')
-        {
-            new_string[i] = 1;
-        }
-        else if (input[i] == 'o' || input[i] == 'O')
-        {
-            new_string[i] = 0;
-        }
-        else
-        {
-            new_string[i] = input[i];
-        }
+    // for(int i = 0; i < length; i++)
+    // {
+    //     if (input[i] == 'a' || input[i] == 'A')
+    //     {
+    //         new_string[i] = 6;
+    //     }
+    //     else if (input[i] == 'e' || input[i] == 'E')
+    //     {
+    //         new_string[i] = 3;
+    //     }
+    //     else if (input[i] == 'i' || input[i] == 'I')
+    //     {
+    //         new_string[i] = 1;
+    //     }
+    //     else if (input[i] == 'o' || input[i] == 'O')
+    //     {
+    //         new_string[i] = 0;
+    //     }
+    //     else
+    //     {
+    //         new_string[i] = input[i];
+    //     }
 
-        return new_string;
+    //     return new_string;
+
+            return;
     }
 }
