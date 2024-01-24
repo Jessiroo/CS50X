@@ -6,9 +6,10 @@ string replace(string input[]);
 // main program
 int main(int argc, string argv[])
 {
-    if (argc > 2)
+    if (argc > 2 || argc < 2)
     {
-        return;
+        printf("Error, improper command line arguments, please try again.../n");
+        return 1;
     }
 
     string answer = replace(argv[]);
