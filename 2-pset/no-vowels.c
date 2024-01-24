@@ -6,8 +6,7 @@ string replace(string input[]);
 // main program
 int main(int argc, string argv[])
 {
-    int length = argc;
-
+    
 }
 
 // vowel replacer function
