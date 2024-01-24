@@ -13,20 +13,8 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    
+    printf(")
 
-
-    // printf("%s\n", argv[1]);
-
-    // int length = strlen(argv[1]);
-
-    // char input_string[length];
-
-    // string answer = replace(char argv[1]);
-
-    // string answer = replace(input);
-
-    // printf("%s/n", answer);
 }
 
 // vowel replacer function
