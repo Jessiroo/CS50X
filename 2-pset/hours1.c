@@ -1,6 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
+float calc_hours(int hours[], )
+
 int main(void)
 {
     int weeks = 0;
@@ -17,14 +19,25 @@ int main(void)
         int hours = 0;
         do
         {
-            hours = get_int("Hours: ");
+            hours = get_int("Week %i Hours: ", i);
         }
         while (hours < 0);
 
         array[i] = hours;
     }
 
-    char = get_char("Enter );
+    char output_type;
+
+    do
+    {
+        output_type = toupper(get_char("Enter T for total hours, A for average hours per week: "));
+    }
+    while (output_type != 'T' && output_type != 'A');
+
+
+
+
+
 
     // request number of weeks taking CS50
         // do while number is 0 or less
