@@ -15,6 +15,8 @@ int main(int argc, string argv[])
 
     printf("%s\n", argv[1]);
 
+    string answer[] = replace(argv[1]);
+
     // string answer = replace(input);
 
     // printf("%s/n", answer);
