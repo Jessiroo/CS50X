@@ -35,6 +35,8 @@ int main(void)
     }
     while (output_type != 'T' && output_type != 'A');
 
+    float answer = calc_hours()
+
     // request number of weeks taking CS50
         // do while number is 0 or less
     // create array of length weeks
