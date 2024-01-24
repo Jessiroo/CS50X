@@ -12,9 +12,8 @@ int main(int argc, string argv[])
         printf("Error, improper command line arguments, please try again...\n");
         return 1;
     }
-    string input = argv[1];
 
-    string answer = replace(input);
+    string answer = replace(argv[1]);
 
     printf("%s\n", answer);
 }
@@ -23,6 +22,7 @@ int main(int argc, string argv[])
 string replace(char input[])
 {
     int length = strlen(input);
+    printf("%i\n", length);
     char new_string[length];
 
     for(int i = 0; i < length; i++)
@@ -49,6 +49,6 @@ string replace(char input[])
         }
     }
 
-    string leet_string = new_string;
-    return leet_string;
+    printf("%s\n", new_string);
+    return "OK";
 }
