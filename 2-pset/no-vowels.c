@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 string replace(string input[]);
 
@@ -12,7 +13,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    string answer = replace(argv[]);
+    string answer = replace(argv);
 
     printf("%s/n", answer);
 }
@@ -20,7 +21,7 @@ int main(int argc, string argv[])
 // vowel replacer function
 string replace(string input[])
 {
-    int length = strlen(input[]);
+    int length = strlen(input);
     string new_string[length];
 
     for(int i = 0; i < length; i++)
