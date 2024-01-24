@@ -3,6 +3,23 @@
 
 int main(void)
 {
+    int weeks = 0;
+    do
+    {
+        weeks = get_int("How many weeks have you been taking the course? ");
+    }
+    while (weeks < 1);
+
+    int array[weeks];
+
+    for (int i = 0; i < weeks, i++)
+    {
+        do
+        {
+            
+        }
+    }
+
     // request number of weeks taking CS50
         // do while number is 0 or less
     // create array of length weeks
