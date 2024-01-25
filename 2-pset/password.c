@@ -3,6 +3,7 @@
 // Practice using the ctype library
 
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 
 bool valid(string password);
@@ -20,7 +21,7 @@ int main(void)
     }
 }
 
-// TODO: Complete the Boolean function below
+// check valid password function
 bool valid(string password)
 {
     return false;
