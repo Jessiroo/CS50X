@@ -43,7 +43,10 @@ bool valid(string password)
             lower_case = true;
         }
         else if (number == false && isalnum(password[i]))
-        
+        {
+            number = true;
+        }
+        else if (symbol == false && )
     }
 
     return false;
