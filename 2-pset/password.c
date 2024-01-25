@@ -24,5 +24,9 @@ int main(void)
 // check valid password function
 bool valid(string password)
 {
+    bool upper_case = false;
+    bool lower_case = false;
+    bool 
+
     return false;
 }
