@@ -34,6 +34,11 @@ bool valid(string password)
 
     for (int i = 0; i < length; i++)
     {
+        if (upper_case == true && lower_case == true && number == true && symbol == true)
+        {
+            break;
+        }
+
         if (upper_case == false && isupper(password[i]))
         {
             upper_case = true;
@@ -49,10 +54,16 @@ bool valid(string password)
             number = true;
             continue;
         }
-        else if (symbol == false && )
+        else if (symbol == false && ispunct(password[i]))
         {
-            
+            symbol = true;
+            continue;
         }
+    }
+
+    if (upper_case == true && lower_case == true && number == true && symbol == true)
+    {
+        return true;
     }
 
     return false;
