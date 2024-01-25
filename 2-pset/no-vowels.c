@@ -22,7 +22,9 @@ int main(int argc, string argv[])
 string replace(string input)
 {
     int length = strlen(input);
-    char new_string[length];
+    // char new_string[length];
+
+    string new_string;
 
     for (int i = 0; i < length; i++)
     {
@@ -48,6 +50,5 @@ string replace(string input)
         }
     }
 
-    string replaced_string = (string) new_string;
-    return replaced_string;
+    return new_string;
 }
