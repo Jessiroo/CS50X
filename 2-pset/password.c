@@ -24,6 +24,5 @@ int main(void)
 // check valid password function
 bool valid(string password)
 {
-    bool is_valid = true;
     return false;
 }
