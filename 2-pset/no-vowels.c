@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-string replace(char input[]);
+string replace(string input);
 
 // main program
 int main(int argc, string argv[])
@@ -19,7 +19,7 @@ int main(int argc, string argv[])
 }
 
 // vowel replacer function
-string replace(char input[])
+string replace(string input)
 {
     int length = strlen(input);
     char new_string[length];
