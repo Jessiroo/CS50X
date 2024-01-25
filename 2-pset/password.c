@@ -49,7 +49,7 @@ bool valid(string password)
             lower_case = true;
             continue;
         }
-        else if (number == false && isalnum(password[i]))
+        else if (number == false && isdigit(password[i]))
         {
             number = true;
             continue;
