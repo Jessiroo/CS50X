@@ -48,5 +48,6 @@ string replace(string input)
         }
     }
 
-    
+    string replaced_string = (string) new_string;
+    return replaced_string;
 }
