@@ -27,6 +27,7 @@ bool valid(string password)
     bool upper_case = false;
     bool lower_case = false;
     bool number = false;
+    bool 
 
     return false;
 }
