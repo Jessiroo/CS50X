@@ -24,7 +24,7 @@ string replace(string input)
     int length = strlen(input);
     // char new_string[length];
 
-    string new_string;
+    string new_string = input;
 
     for (int i = 0; i < length; i++)
     {
@@ -44,10 +44,10 @@ string replace(string input)
         {
             new_string[i] = '0';
         }
-        else
-        {
-            new_string[i] = input[i];
-        }
+        // else
+        // {
+        //     new_string[i] = input[i];
+        // }
     }
 
     return new_string;
