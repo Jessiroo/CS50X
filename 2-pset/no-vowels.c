@@ -48,5 +48,6 @@ string replace(char input[])
         }
     }
 
-    string
+    string replaced_string = new_string;
+    
 }
