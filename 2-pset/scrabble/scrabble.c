@@ -25,6 +25,10 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
     string new_string = word;
-    int length = strlen()
+    int length = strlen(word);
 
+    for (int i = 0; i < length; i++)
+    {
+        if (new_string[i] == )
+    }
 }
