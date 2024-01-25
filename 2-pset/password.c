@@ -37,16 +37,22 @@ bool valid(string password)
         if (upper_case == false && isupper(password[i]))
         {
             upper_case = true;
+            continue;
         }
         else if (lower_case == false && islower(password[i]))
         {
             lower_case = true;
+            continue;
         }
         else if (number == false && isalnum(password[i]))
         {
             number = true;
+            continue;
         }
         else if (symbol == false && )
+        {
+            
+        }
     }
 
     return false;
