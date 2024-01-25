@@ -14,8 +14,6 @@ int main(void)
     string word1 = get_string("Player 1: ");
     string word2 = get_string("Player 2: ");
 
-    
-
     // Score both words
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
