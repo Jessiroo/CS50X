@@ -24,7 +24,7 @@ string replace(char input[])
     int length = strlen(input);
     char new_string[length];
 
-    for(int i = 0; i < length; i++)
+    for (int i = 0; i < length; i++)
     {
         if (input[i] == 'a' || input[i] == 'A')
         {
@@ -48,5 +48,5 @@ string replace(char input[])
         }
     }
 
-    string 
+    string
 }
