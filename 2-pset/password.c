@@ -5,6 +5,7 @@
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
+#include <string.h>
 
 bool valid(string password);
 
@@ -24,10 +25,17 @@ int main(void)
 // check valid password function
 bool valid(string password)
 {
+    int length = strlen(password);
+
     bool upper_case = false;
     bool lower_case = false;
     bool number = false;
-    bool 
+    bool symbol = false;
+
+    for (int i = 0; i < length; i++)
+    {
+        if (upper_case == false && )
+    }
 
     return false;
 }
