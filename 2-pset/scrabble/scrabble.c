@@ -27,8 +27,19 @@ int compute_score(string word)
     string new_string = word;
     int length = strlen(word);
 
+    int score = 0;
     for (int i = 0; i < length; i++)
     {
-        if (new_string[i] == )
+        // check if punctuation and update to uppercase if needed
+        if (ispunct(new_string[i]))
+        {
+            continue;
+        }
+        if (islower(new_string[i]))
+        {
+            new_string[i] = toupper(new_string[i]);
+        }
+
+        
     }
 }
