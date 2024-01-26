@@ -34,26 +34,47 @@ int main(void)
 
 int compute_score(string word)
 {
-    string new_string = word;
-    int length = strlen(word);
-
     int score = 0;
-    for (int i = 0; i < length; i++)
+    for (int i = 0, length = strlen(word); i < length; i++)
     {
-        // check if punctuation and update to uppercase if needed
-        if (ispunct(new_string[i]))
+        if (isupper(word[i]))
         {
-            continue;
+            score += POINTS[word[i] - 'A'];
         }
-        if (islower(new_string[i]))
+        else if (islower(word[i]))
         {
-            new_string[i] = toupper(new_string[i]);
+            score += POINTS[word[i] - 'a'];
         }
-
-        // update score
-        int score_position = new_string[i] - 65;
-        score += POINTS[score_position];
     }
 
     return score;
 }
+
+
+// ALTERNATE SOLUTION:
+
+// int compute_score(string word)
+// {
+//     string new_string = word;
+//     int length = strlen(word);
+
+//     int score = 0;
+//     for (int i = 0; i < length; i++)
+//     {
+//         // check if punctuation and update to uppercase if needed
+//         if (ispunct(new_string[i]))
+//         {
+//             continue;
+//         }
+//         if (islower(new_string[i]))
+//         {
+//             new_string[i] = toupper(new_string[i]);
+//         }
+
+//         // update score
+//         int score_position = new_string[i] - 65;
+//         score += POINTS[score_position];
+//     }
+
+//     return score;
+// }
