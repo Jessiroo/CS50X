@@ -11,7 +11,8 @@ int main(void)
     // TODO
     // get string
     // convert string to series of 8 bit binary numbers
-    // loop over 
+    // loop over array of bit strings
+        // 
 }
 
 void print_bulb(int bit)
