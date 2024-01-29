@@ -10,7 +10,7 @@ int main(void)
 {
     // TODO
     // get string
-    // convert string to 
+    // convert string to series of 8 bit binary numbers
 }
 
 void print_bulb(int bit)
