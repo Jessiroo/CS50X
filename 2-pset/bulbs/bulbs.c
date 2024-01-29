@@ -9,6 +9,8 @@ void print_bulb(int bit);
 int main(void)
 {
     // TODO
+    // get string
+    // convert string to 
 }
 
 void print_bulb(int bit)
