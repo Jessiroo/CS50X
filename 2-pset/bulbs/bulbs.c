@@ -12,12 +12,9 @@ int main(void)
     string input = get_string("What is your message? ");
     int length = strlen(input);
 
-    // string binary_array[length];
-
     for (int i = 0; i < length; i++)
     {
-        // binary_array[i] = convert_string(input[i]);
-
+        int binary[8];
 
         for (int j = 0; j < 8; j++)
         {
