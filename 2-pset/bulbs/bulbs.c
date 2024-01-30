@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-int[] convert_binary(int decimal);
+int convert_binary(int decimal)[];
 
 int main(void)
 {
@@ -18,7 +18,8 @@ int main(void)
     {
         int decimal = (int) input[i];
         printf("%i\n", decimal);
-        
+
+        byte_array[i] = convert_binary(decimal);
         // input decimal into conversion fn for getting binary array set to value
     }
 
@@ -28,9 +29,9 @@ int main(void)
 }
 
 // binary conversion fn
-int[] convert_binary(int decimal)
+int convert_binary(int decimal)[]
 {
-
+    return {1, 0, 1, 1, 0, 0, 1, 0};
 }
 
 // printing bulbs function
