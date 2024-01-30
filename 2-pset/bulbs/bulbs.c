@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-// string convert_string(string input);
+string convert_string(char input);
 
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 
     for (int i = 0; i < length; i++)
     {
-
+        binary_array[i] = convert_string(input[i]);
     }
 
     // TODO
@@ -27,11 +27,12 @@ int main(void)
         // at end of loop print line break
 }
 
-// string to binary array function
-// string[] convert_string(string input)
-// {
-
-// }
+// char to binary function
+string convert_string(char input)
+{
+    // create binary for character
+    return "01001010";
+}
 
 // printing bulbs function
 void print_bulb(int bit)
