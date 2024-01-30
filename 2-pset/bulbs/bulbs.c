@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-// string[] convert_string(string input);
+// string convert_string(string input);
 
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 
     for (int i = 0; i < length; i++)
     {
-        
+
     }
 
     // TODO
