@@ -21,6 +21,9 @@ int main(void)
         // create decrementing loop with set of rules for feeding in decimal
         // to output binary as value for byte
         // break when decimal value reaches 0
+        // outsource into own fn?
+
+
     }
 }
 
