@@ -22,7 +22,8 @@ int main(void)
 
         for (int j = 0; j < 8; j++)
         {
-            print_bulb(binary[j]);
+            int bit = binary[j];
+            printf("%i\n", bit);
         }
 
         printf("\n");
