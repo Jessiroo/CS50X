@@ -11,18 +11,20 @@ int main(void)
     string input = get_string("What is your message? ");
     int length = strlen(input);
 
-    for (int i = 0; i < length; i++)
-    {
-        int binary[8];
+    
 
-        for (int j = 0; j < 8; j++)
-        {
-            int bit = binary[j];
-            printf("%i\n", bit);
-        }
+    // for (int i = 0; i < length; i++)
+    // {
+    //     int binary[8];
 
-        printf("\n");
-    }
+    //     for (int j = 0; j < 8; j++)
+    //     {
+    //         int bit = binary[j];
+    //         printf("%i\n", bit);
+    //     }
+
+    //     printf("\n");
+    // }
 }
 
 // printing bulbs function
