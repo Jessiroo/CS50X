@@ -18,7 +18,9 @@ int main(void)
 
         int byte[BITS_IN_BYTE];
 
-        
+        // create decrementing loop with set of rules for feeding in decimal
+        // to output binary as value for byte
+        // break when decimal value reaches 0
     }
 }
 
