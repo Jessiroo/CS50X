@@ -1,3 +1,4 @@
+// program for converting input text to binary
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
