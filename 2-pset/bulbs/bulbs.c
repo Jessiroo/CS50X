@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-int convert_binary(int decimal)[];
+// int convert_binary(int decimal)[];
 
 int main(void)
 {
@@ -29,10 +29,10 @@ int main(void)
 }
 
 // binary conversion fn
-int convert_binary(int decimal)[]
-{
-    return {1, 0, 1, 1, 0, 0, 1, 0};
-}
+// int convert_binary(int decimal)[]
+// {
+//     return {1, 0, 1, 1, 0, 0, 1, 0};
+// }
 
 // printing bulbs function
 void print_bulb(int bit)
