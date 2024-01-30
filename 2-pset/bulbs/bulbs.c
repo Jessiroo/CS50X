@@ -25,16 +25,17 @@ int main(void)
             {
                 byte[j] = 0;
             }
-            else if (decimal % 2 == 0)
-            {
-                byte[j] = 0;
-                decimal = decimal / 2;
-            }
             else if (decimal % 2 == 1)
             {
                 byte[j] = 1;
                 decimal = (decimal - 1) / 2;
             }
+            else if (decimal % 2 == 0)
+            {
+                byte[j] = 0;
+                decimal = decimal / 2;
+            }
+
         }
 
         // create decrementing loop with set of rules for feeding in decimal
