@@ -20,6 +20,7 @@ int main(void)
 
         for (int j = BITS_IN_BYTE; j > 0; j--)
         {
+            printf("decimal %i\n", decimal);
             if (decimal == 0)
             {
                 byte[j] = 0;
@@ -34,7 +35,6 @@ int main(void)
                 byte[j] = 1;
                 decimal = (decimal - 1) / 2;
             }
-            printf("decimal loop %i\n", decimal);
         }
 
         // create decrementing loop with set of rules for feeding in decimal
