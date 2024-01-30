@@ -18,7 +18,6 @@ int main(void)
     {
         // binary_array[i] = convert_string(input[i]);
 
-        int binary[8] = convert_string(input[i]);
 
         for (int j = 0; j < 8; j++)
         {
