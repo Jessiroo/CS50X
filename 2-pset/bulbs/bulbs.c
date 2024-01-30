@@ -22,8 +22,7 @@ int main(void)
 
         for (int j = 0; j < 8; j++)
         {
-            char character = input[i][j];
-            // print_bulb(character);
+            print_bulb(binary[j]);
         }
 
         printf("\n");
