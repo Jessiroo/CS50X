@@ -22,7 +22,8 @@ int main(void)
 
         for (int j = 0; j < 8; j++)
         {
-            print_bulb(input[i][j]);
+            char character = input[i][j];
+            // print_bulb(character);
         }
 
         printf("\n");
