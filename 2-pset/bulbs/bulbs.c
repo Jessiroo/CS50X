@@ -20,7 +20,10 @@ int main(void)
 
         string binary = convert_string(input[i]);
 
-        
+        for (int j = 0; j < 8; j++)
+        {
+            
+        }
     }
 
     // TODO
