@@ -5,7 +5,6 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-string convert_string(char input);
 
 int main(void)
 {
@@ -24,13 +23,6 @@ int main(void)
 
         printf("\n");
     }
-}
-
-// char to binary function
-string convert_string(char input)
-{
-    // create binary for character
-    return {0, 1, 1, 0, 0, 1, 0, 1};
 }
 
 // printing bulbs function
