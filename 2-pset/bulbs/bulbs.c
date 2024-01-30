@@ -12,7 +12,7 @@ int main(void)
     string input = get_string("What is your message? ");
     int length = strlen(input);
 
-    
+    string
 
     // TODO
     // get string
