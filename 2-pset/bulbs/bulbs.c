@@ -40,7 +40,7 @@ int main(void)
         // to output binary as value for byte
         // break when decimal value reaches 0
 
-        for (int k = 0; k < length; k++)
+        for (int k = 0; k < BITS_IN_BYTE; k++)
         {
             print_bulb(byte[k]);
         }
