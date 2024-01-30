@@ -18,12 +18,19 @@ int main(void)
 
         int byte[BITS_IN_BYTE];
 
+        for (int i = BITS_IN_BYTE; i > 0; i--)
+        {
+            
+        }
+
         // create decrementing loop with set of rules for feeding in decimal
         // to output binary as value for byte
         // break when decimal value reaches 0
-        // outsource into own fn?
 
+        // create loop for feeding bit values from byte
+            // print appropriate item per bit
 
+        // print line break
     }
 }
 
