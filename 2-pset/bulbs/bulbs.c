@@ -18,7 +18,7 @@ int main(void)
     {
         // binary_array[i] = convert_string(input[i]);
 
-        string binary = convert_string(input[i]);
+        int binary[8] = convert_string(input[i]);
 
         for (int j = 0; j < 8; j++)
         {
@@ -34,7 +34,7 @@ int main(void)
 string convert_string(char input)
 {
     // create binary for character
-    return "01001010";
+    return {0, 1, 1, 0, 0, 1, 0, 1};
 }
 
 // printing bulbs function
