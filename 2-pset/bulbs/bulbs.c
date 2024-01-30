@@ -18,23 +18,7 @@ int main(void)
     {
         int decimal = (int) input[i];
         printf("%i\n", decimal);
-        int byte[BITS_IN_BYTE];
-
-        
     }
-
-    // for (int i = 0; i < length; i++)
-    // {
-    //     int binary[8];
-
-    //     for (int j = 0; j < 8; j++)
-    //     {
-    //         int bit = binary[j];
-    //         printf("%i\n", bit);
-    //     }
-
-    //     printf("\n");
-    // }
 }
 
 // binary conversion fn
