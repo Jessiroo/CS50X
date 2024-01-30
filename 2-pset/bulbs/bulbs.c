@@ -18,7 +18,7 @@ int main(void)
 
         int byte[BITS_IN_BYTE];
 
-        //
+        
     }
 }
 
