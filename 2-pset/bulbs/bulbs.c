@@ -24,7 +24,7 @@ int main(void)
             {
                 byte[j] = 0;
             }
-            else if (decimal % 2 = 0)
+            else if (decimal % 2 == 0)
             {
                 byte[j] = 0;
                 decimal = decimal / 2;
@@ -39,6 +39,13 @@ int main(void)
         // create decrementing loop with set of rules for feeding in decimal
         // to output binary as value for byte
         // break when decimal value reaches 0
+
+        for (int k = 0; k < length; k++)
+        {
+            print_bulb(byte[k]);
+        }
+
+        printf("\n");
 
         // create loop for feeding bit values from byte
             // print appropriate item per bit
