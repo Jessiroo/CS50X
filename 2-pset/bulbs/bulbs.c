@@ -12,20 +12,15 @@ int main(void)
     string input = get_string("What is your message? ");
     int length = strlen(input);
 
-    int byte_array[length];
-
     for (int i = 0; i < length; i++)
     {
         int decimal = (int) input[i];
         printf("%i\n", decimal);
 
-        byte_array[i] = convert_binary(decimal);
-        // input decimal into conversion fn for getting binary array set to value
-    }
+        int byte[BITS_IN_BYTE];
 
-    // loop over each value in byte array
-        // loop over each bit value and print
-        // at end of each byte print line break
+        // 
+    }
 }
 
 // binary conversion fn
