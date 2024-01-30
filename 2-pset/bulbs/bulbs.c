@@ -11,7 +11,12 @@ int main(void)
     string input = get_string("What is your message? ");
     int length = strlen(input);
 
-    
+    int decimal_array[length];
+
+    for (int i = 0; i < length; i++)
+    {
+        decimal_array[i] = (int) input[i];
+    }
 
     // for (int i = 0; i < length; i++)
     // {
