@@ -22,16 +22,11 @@ int main(void)
 
         for (int j = 0; j < 8; j++)
         {
-            
+            print_bulb(input[i][j]);
         }
-    }
 
-    // TODO
-    // get string
-    // convert string to array of 8 bit binary numbers
-    // loop over array of bit strings
-        // loop over each bit in string feeding it into the print fn
-        // at end of loop print line break
+        printf("\n");
+    }
 }
 
 // char to binary function
