@@ -18,9 +18,22 @@ int main(void)
 
         int byte[BITS_IN_BYTE];
 
-        for (int i = BITS_IN_BYTE; i > 0; i--)
+        for (int j = BITS_IN_BYTE; j > 0; j--)
         {
-            
+            if (decimal == 0)
+            {
+                byte[j] = 0;
+            }
+            else if (decimal % 2 = 0)
+            {
+                byte[j] = 0;
+                decimal = decimal / 2;
+            }
+            else
+            {
+                byte[j] = 1;
+                decimal = (decimal - 1) / 2;
+            }
         }
 
         // create decrementing loop with set of rules for feeding in decimal
