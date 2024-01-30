@@ -5,11 +5,14 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-string[] convert_string();
+// string[] convert_string(string input);
 
 int main(void)
 {
     string input = get_string("What is your message? ");
+    int length = strlen(input);
+
+    
 
     // TODO
     // get string
@@ -19,6 +22,13 @@ int main(void)
         // at end of loop print line break
 }
 
+// string to binary array function
+// string[] convert_string(string input)
+// {
+
+// }
+
+// printing bulbs function
 void print_bulb(int bit)
 {
     if (bit == 0)
