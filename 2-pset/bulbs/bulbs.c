@@ -12,7 +12,12 @@ int main(void)
     string input = get_string("What is your message? ");
     int length = strlen(input);
 
-    string
+    string binary_array[length];
+
+    for (int i = 0; i < length; i++)
+    {
+        
+    }
 
     // TODO
     // get string
