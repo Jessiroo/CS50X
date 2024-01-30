@@ -34,6 +34,7 @@ int main(void)
                 byte[j] = 1;
                 decimal = (decimal - 1) / 2;
             }
+            printf("decimal loop %i\n", decimal);
         }
 
         // create decrementing loop with set of rules for feeding in decimal
