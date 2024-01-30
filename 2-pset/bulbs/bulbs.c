@@ -18,7 +18,7 @@ int main(void)
 
         int byte[BITS_IN_BYTE];
 
-        for (int j = BITS_IN_BYTE; j > 0; j--)
+        for (int j = BITS_IN_BYTE - 1; j >= 0; j--)
         {
             printf("decimal %i\n", decimal);
             if (decimal == 0)
