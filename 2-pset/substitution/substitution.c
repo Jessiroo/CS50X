@@ -1,4 +1,5 @@
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -17,6 +18,10 @@ int main(int argc, string argv[])
     }
 
     // check that every character is alphabetical and is used only once
+    for (int i = 0; i < strlen(argv[1]); i++)
+    {
+        
+    }
 
     // get user string
 }
