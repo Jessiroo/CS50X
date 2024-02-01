@@ -4,11 +4,15 @@
 
 int main(int argc, string argv[])
 {
+    // error messages if command line arguments incorrect
     if (argc != 2)
     {
         printf("Usage: ./substitution key\n");
         return 1;
     }
-
-    if (strlen())
+    else if (strlen(argv[1] != 26))
+    {
+        printf("Key must contain 26 characters.");
+        return 1;
+    }
 }
