@@ -21,6 +21,11 @@ int main(int argc, string argv[])
     for (int i = 0; i < strlen(argv[1]); i++)
     {
         if (!isalpha(argv[1][i]))
+        {
+            printf("Key must consist only of letters");
+            return 1;
+        }
+        if ()
     }
 
     // get user string
