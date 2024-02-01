@@ -16,7 +16,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // check that every character is alphabetical and is 
+    // check that every character is alphabetical and is used only once
 
     // get user string
 }
