@@ -7,7 +7,7 @@
 const int KEY_LENGTH = 26;
 
 // functions
-char encrypt(char letter, )
+char encrypt(char letter, string key);
 
 // main program
 int main(int argc, string argv[])
@@ -74,4 +74,8 @@ int main(int argc, string argv[])
     printf("\n");
 }
 
-char
+// encrypt function
+char encrypt(char letter, string key)
+{
+    
+}
