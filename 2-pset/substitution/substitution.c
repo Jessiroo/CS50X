@@ -43,7 +43,7 @@ int main(int argc, string argv[])
         // compare if used more than once
         for (int j = i + 1; j < strlen(key); j++)
         {
-            if (argv[1][i] == key[j])
+            if (key[i] == key[j])
             {
                 printf("Key cannot have repeat characters.");
                 return 1;
