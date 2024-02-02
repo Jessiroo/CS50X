@@ -41,7 +41,7 @@ int main(int argc, string argv[])
         {
             if (key[i] == key[j])
             {
-                printf("Key cannot have repeat characters.")
+                printf("Key cannot have repeat characters.");
                 return 1;
             }
         }
@@ -49,6 +49,9 @@ int main(int argc, string argv[])
 
     // get user string for conversion
     string plaintext = get_string("plaintext: ");
+
+    printf("%s\n", key);
+    printf("%s\n", argv[1]);
 
     // print ciphertext
     // print each decrypted letter
