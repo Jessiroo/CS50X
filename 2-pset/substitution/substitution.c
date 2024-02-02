@@ -17,6 +17,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    // create key variable
     string key = strcpy(argv[1]);
 
     // check that every character is alphabetical and is used only once
@@ -24,7 +25,7 @@ int main(int argc, string argv[])
     {
         if (!isalpha(key[i]))
         {
-            printf("Key must consist only of letters");
+            printf("Key must consist only of letters.");
             return 1;
         }
         if (islower(key[i]))
@@ -32,7 +33,15 @@ int main(int argc, string argv[])
             key[i] = toupper(key[i]);
         }
 
-        
+        // compare if used more than once
+        for (int j = i + 1; j < strlen(key); j++)
+        {
+            if (key[i] == key[j])
+            {
+                printf("Key cannot have repeat characters.")
+                return 1;
+            }
+        }
     }
 
     // get user string
