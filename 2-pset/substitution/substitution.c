@@ -7,7 +7,7 @@
 const int KEY_LENGTH = 26;
 
 // functions
-char encrypt(char letter, string key);
+char encrypt(char character, string key);
 
 // main program
 int main(int argc, string argv[])
@@ -75,7 +75,25 @@ int main(int argc, string argv[])
 }
 
 // encrypt function
-char encrypt(char letter, string key)
+char encrypt(char character, string key)
 {
-    
+    // return character as is if not alphabetical
+    if (!isalpha(character))
+    {
+        return character;
+    }
+
+    // convert letter
+    char cipher_letter;
+    int 
+    if (isupper(character))
+    {
+        character -
+    }
+    else
+    {
+        character_constant = 'a';
+    }
+
+    // convert to appropriate
 }
