@@ -17,18 +17,11 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    // create key variable
+    // create key variable and check all alphabetical
     char key[strlen(argv[1]) + 1];
-    
-
-    // check that every character is alphabetical and is used only once
     for (int i = 0; i < strlen(argv[1]) + 1; i++)
     {
-        if (argv[1][i] == '/0')
-        {
-            break;
-        }
-        else if (!isalpha(argv[1][i]))
+        if (!isalpha(argv[1][i]))
         {
             printf("Key must consist only of letters.");
             return 1;
@@ -42,7 +35,11 @@ int main(int argc, string argv[])
         {
             key[i] = argv[1][i];
         }
+    }
 
+    // check each character used only once
+    for (int i = 0; i < strlen(key); i++)
+    {
         // compare if used more than once
         for (int j = i + 1; j < strlen(key); j++)
         {
