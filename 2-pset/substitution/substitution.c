@@ -23,7 +23,7 @@ int main(int argc, string argv[])
     {
         if (!isalpha(argv[1][i]))
         {
-            printf("Key must consist only of letters.");
+            printf("Key must consist only of letters.\n");
             return 1;
         }
 
@@ -45,7 +45,7 @@ int main(int argc, string argv[])
         {
             if (key[i] == key[j])
             {
-                printf("Key cannot have repeat characters.");
+                printf("Key cannot have repeat characters.\n");
                 return 1;
             }
         }
