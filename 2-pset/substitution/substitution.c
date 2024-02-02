@@ -21,7 +21,7 @@ int main(int argc, string argv[])
     char key[strlen(argv[1]) + 1];
     for (int i = 0; i < strlen(argv[1]) + 1; i++)
     {
-        if (argv[1][i] != NULL && !isalpha(argv[1][i]))
+        if (&& !isalpha(argv[1][i]))
         {
             printf("Key must consist only of letters.\n");
             return 1;
