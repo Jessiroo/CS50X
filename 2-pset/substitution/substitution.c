@@ -44,5 +44,10 @@ int main(int argc, string argv[])
         }
     }
 
-    // get user string
+    // get user string for conversion
+    string plaintext = get_string("plaintext: ");
+
+    // print ciphertext
+    // print each decrypted letter
+    // print line break
 }
