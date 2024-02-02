@@ -18,7 +18,9 @@ int main(int argc, string argv[])
     }
 
     // create key variable
-    string key = strcpy(argv[1]);
+    string key[strlen(argv[1]) + 1];
+    strcpy(key, argv[1]);
+    printf("%s", key);
 
     // check that every character is alphabetical and is used only once
     for (int i = 0; i < strlen(key); i++)
