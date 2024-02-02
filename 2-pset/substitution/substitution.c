@@ -18,22 +18,28 @@ int main(int argc, string argv[])
     }
 
     // create key variable
-    string key = argv[1];
-    // char key = malloc(strlen(argv[1]) + 1);
-    // strcpy(key, argv[1]);
-    // printf("%s", key);
+    char key[strlen(argv[1]) + 1];
 
     // check that every character is alphabetical and is used only once
-    for (int i = 0; i < strlen(key); i++)
+    for (int i = 0; i < strlen(argv[1]) + 1; i++)
     {
-        if (!isalpha(key[i]))
+        if (argv[1][i] == '/0')
+        {
+            break;
+        }
+        else if (!isalpha(argv[1][i]))
         {
             printf("Key must consist only of letters.");
             return 1;
         }
-        if (islower(key[i]))
+
+        if (islower(argv[1][i]))
         {
-            key[i] = toupper(key[i]);
+            key[i] = toupper(argv[1][i]);
+        }
+        else
+        {
+            key[i] = argv[1][i];
         }
 
         // compare if used more than once
