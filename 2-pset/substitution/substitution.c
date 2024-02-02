@@ -18,7 +18,7 @@ int main(int argc, string argv[])
     }
 
     // create key variable
-    string key[strlen(argv[1]) + 1];
+    char key = malloc(strlen(argv[1]) + 1);
     strcpy(key, argv[1]);
     printf("%s", key);
 
