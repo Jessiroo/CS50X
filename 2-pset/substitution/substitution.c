@@ -3,8 +3,13 @@
 #include <stdio.h>
 #include <string.h>
 
+// constant
 const int KEY_LENGTH = 26;
 
+// functions
+char encrypt(char letter, )
+
+// main program
 int main(int argc, string argv[])
 {
     // error messages if command line arguments incorrect
@@ -55,12 +60,18 @@ int main(int argc, string argv[])
 
     // get user string for conversion
     string plaintext = get_string("plaintext: ");
+    int cipher_length = strlen(plaintext);
 
+    // print ciphered text
     printf("ciphertext: ");
 
-    
+    for (int i = 0; i < cipher_length; i++)
+    {
+        char cipher_letter = encrypt(plaintext[i], key);
+        printf("%c", cipher_letter);
+    }
 
-    // print ciphertext
-    // print each decrypted letter
-    // print line break
+    printf("\n");
 }
+
+char
