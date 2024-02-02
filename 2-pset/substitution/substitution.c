@@ -18,9 +18,10 @@ int main(int argc, string argv[])
     }
 
     // create key variable
-    char key = malloc(strlen(argv[1]) + 1);
-    strcpy(key, argv[1]);
-    printf("%s", key);
+    string key = argv[1];
+    // char key = malloc(strlen(argv[1]) + 1);
+    // strcpy(key, argv[1]);
+    // printf("%s", key);
 
     // check that every character is alphabetical and is used only once
     for (int i = 0; i < strlen(key); i++)
