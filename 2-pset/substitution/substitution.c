@@ -19,6 +19,7 @@ int main(int argc, string argv[])
 
     // create key variable
     char key[strlen(argv[1]) + 1];
+    
 
     // check that every character is alphabetical and is used only once
     for (int i = 0; i < strlen(argv[1]) + 1; i++)
@@ -45,7 +46,7 @@ int main(int argc, string argv[])
         // compare if used more than once
         for (int j = i + 1; j < strlen(key); j++)
         {
-            if (key[i] == key[j])
+            if (argv[1][i] == key[j])
             {
                 printf("Key cannot have repeat characters.");
                 return 1;
