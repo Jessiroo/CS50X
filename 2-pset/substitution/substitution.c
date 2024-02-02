@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+const int KEY_LENGTH = 26;
+
 int main(int argc, string argv[])
 {
     // error messages if command line arguments incorrect
@@ -11,17 +13,17 @@ int main(int argc, string argv[])
         printf("Usage: ./substitution key\n");
         return 1;
     }
-    else if (strlen(argv[1]) != 26)
+    else if (strlen(argv[1]) != KEY_LENGTH)
     {
         printf("Key must contain 26 characters.");
         return 1;
     }
 
     // create key variable and check all alphabetical
-    char key[strlen(argv[1]) + 1];
-    for (int i = 0; i < strlen(argv[1]) + 1; i++)
+    char key[KEY_LENGTH + 1];
+    for (int i = 0; i < KEY_LENGTH + 1; i++)
     {
-        if (&& !isalpha(argv[1][i]))
+        if (i < KEY_LENGTH && !isalpha(argv[1][i]))
         {
             printf("Key must consist only of letters.\n");
             return 1;
@@ -38,10 +40,10 @@ int main(int argc, string argv[])
     }
 
     // check each character used only once
-    for (int i = 0; i < strlen(key); i++)
+    for (int i = 0; i < KEY_LENGTH; i++)
     {
         // compare if used more than once
-        for (int j = i + 1; j < strlen(key); j++)
+        for (int j = i + 1; j < KEY_LENGTH; j++)
         {
             if (key[i] == key[j])
             {
@@ -54,8 +56,9 @@ int main(int argc, string argv[])
     // get user string for conversion
     string plaintext = get_string("plaintext: ");
 
-    printf("%s\n", key);
-    printf("%s\n", argv[1]);
+    printf("ciphertext: ");
+
+    
 
     // print ciphertext
     // print each decrypted letter
