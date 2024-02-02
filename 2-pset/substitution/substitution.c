@@ -85,15 +85,19 @@ char encrypt(char character, string key)
 
     // convert letter
     char cipher_letter;
-    int 
+    int index = 0;
+
     if (isupper(character))
     {
-        character -
+        index = character - 'A';
+        cipher_letter = key[index];
     }
     else
     {
-        character_constant = 'a';
+        index = character - 'a';
+        cipher_letter = tolower(key[index]);
     }
 
-    // convert to appropriate
+    // return ciphered letter
+    return cipher_letter;
 }
