@@ -27,7 +27,7 @@ void print_word(string guess, int wordsize, int status[]);
 int main(int argc, string argv[])
 {
     // ensure proper usage
-    // TODO #1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // TODO #1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DONE
     if (argc != 2)
     {
         printf("Usage: ./wordle #\n");
@@ -38,7 +38,7 @@ int main(int argc, string argv[])
     int wordsize = 0;
 
     // ensure argv[1] is either 5, 6, 7, or 8 and store that value in wordsize instead
-    // TODO #2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // TODO #2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DONE
     if (strlen(argv[1]) != 1 || !isdigit(argv[1][0]))
     {
         printf("Argument must be integer between 5 and 8.\n");
@@ -123,6 +123,11 @@ string get_guess(int wordsize)
 
     // ensure users actually provide a guess that is the correct length
     // TODO #3!!!!!!!!!!!!!!!!!!!!!!!!!!
+    do
+    {
+        guess = get_string("Guess: ");
+    }
+    while (strlen(guess) != wordsize);
 
     return guess;
 }
