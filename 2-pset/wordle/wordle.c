@@ -93,7 +93,7 @@ int main(int argc, string argv[])
         int status[wordsize];
 
         // set all elements of status array initially to 0, aka WRONG
-        // TODO #4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        // TODO #4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DONE
         for (int i = 0; i < wordsize; i++)
         {
             status[i] = 0;
