@@ -27,6 +27,12 @@ int main(int argc, string argv[])
 {
     // ensure proper usage
     // TODO #1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    if (argc != 2)
+    {
+        printf("Usage: ./wordle #\n");
+        printf("# must be 5 - 8\n");
+        return 1;
+    }
 
     int wordsize = 0;
 
@@ -92,9 +98,8 @@ int main(int argc, string argv[])
     }
 
     // Print the game's result
-    // TODO #7
+    // TODO #7!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-    // that's all folks!
     return 0;
 }
 
@@ -103,7 +108,7 @@ string get_guess(int wordsize)
     string guess = "";
 
     // ensure users actually provide a guess that is the correct length
-    // TODO #3
+    // TODO #3!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     return guess;
 }
@@ -113,7 +118,7 @@ int check_word(string guess, int wordsize, int status[], string choice)
     int score = 0;
 
     // compare guess to choice and score points as appropriate, storing points in status
-    // TODO #5
+    // TODO #5!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     // HINTS
     // iterate over each letter of the guess
@@ -129,7 +134,7 @@ int check_word(string guess, int wordsize, int status[], string choice)
 void print_word(string guess, int wordsize, int status[])
 {
     // print word character-for-character with correct color coding, then reset terminal font to normal
-    // TODO #6
+    // TODO #6!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     printf("\n");
     return;
