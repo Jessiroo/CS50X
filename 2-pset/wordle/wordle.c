@@ -38,14 +38,9 @@ int main(int argc, string argv[])
 
     // ensure argv[1] is either 5, 6, 7, or 8 and store that value in wordsize instead
     // TODO #2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    if (strlen(argv[1]) = 1)
+    if (strlen(argv[1]) == 1)
     {
         wordsize = argv[1];
-    }
-    else
-    {
-        printf("Argument must be integer between 5 and 8");
-        return 1;
     }
 
     if (wordsize < 5 || wordsize > 8)
@@ -53,8 +48,6 @@ int main(int argc, string argv[])
         printf("Argument must be integer between 5 and 8");
         return 1;
     }
-
-
 
     // open correct file, each file has exactly LISTSIZE words
     char wl_filename[6];
