@@ -38,7 +38,6 @@ int main(int argc, string argv[])
     int wordsize = 0;
 
     // ensure argv[1] is either 5, 6, 7, or 8 and store that value in wordsize instead
-    // TODO #2!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DONE
     if (strlen(argv[1]) != 1 || !isdigit(argv[1][0]))
     {
         printf("Argument must be integer between 5 and 8.\n");
@@ -93,7 +92,6 @@ int main(int argc, string argv[])
         int status[wordsize];
 
         // set all elements of status array initially to 0, aka WRONG
-        // TODO #4 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! DONE
         for (int j = 0; j < wordsize; j++)
         {
             status[j] = 0;
@@ -116,7 +114,6 @@ int main(int argc, string argv[])
     }
 
     // Print the game's result
-    // TODO #7!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     if (won)
     {
         printf("You won!\n");
@@ -134,7 +131,6 @@ string get_guess(int wordsize)
     string guess = "";
 
     // ensure users actually provide a guess that is the correct length
-    // TODO #3!!!!!!!!!!!!!!!!!!!!!!!!!! DONE
     do
     {
         guess = get_string("Input a %i-letter word: ", wordsize);
@@ -149,7 +145,6 @@ int check_word(string guess, int wordsize, int status[], string choice)
     int score = 0;
 
     // compare guess to choice and score points as appropriate, storing points in status
-    // TODO #5!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     for (int i = 0; i < wordsize; i ++)
     {
         for (int j = 0; j < wordsize; j++)
@@ -169,21 +164,12 @@ int check_word(string guess, int wordsize, int status[], string choice)
         }
     }
 
-    // HINTS
-    // iterate over each letter of the guess
-        // iterate over each letter of the choice
-            // compare the current guess letter to the current choice letter
-                // if they're the same position in the word, score EXACT points (green) and break so you don't compare that letter further
-                // if it's in the word, but not the right spot, score CLOSE point (yellow)
-        // keep track of the total score by adding each individual letter's score from above
-
     return score;
 }
 
 void print_word(string guess, int wordsize, int status[])
 {
     // print word character-for-character with correct color coding, then reset terminal font to normal
-    // TODO #6!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     for (int i = 0; i < wordsize; i++)
     {
         if (status[i] == EXACT)
